@@ -227,13 +227,11 @@ library(ggplot2)
 
 <h2>Precondition</h2>
 
-<p>Download activity.zip file and unzip the activity.csv file in the ./data directory under the current directory.</p>
+<p>Download <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">activity.zip</a> file and unzip the activity.csv file in the ./data directory under your working directory.</p>
 
 <h1>Loading and preprocessing the data</h1>
 
-<pre><code class="r">setwd(&quot;E:\\RStudio\\Coursera\\Reproducible Research\\Week1&quot;)
-
-# 1.  Read activity.csv file into activityData variable
+<pre><code class="r"># 1.  Read activity.csv file into activityData variable
 activityData &lt;- read.csv(&quot;./data/activity.csv&quot;, header = TRUE, sep = &#39;,&#39;, colClasses = c(&quot;numeric&quot;, &quot;character&quot;,
                                                                                          &quot;integer&quot;))
 </code></pre>

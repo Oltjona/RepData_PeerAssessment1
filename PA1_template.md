@@ -23,14 +23,12 @@ library(ggplot2)
 ```
 
 ## Precondition
-Download activity.zip file and unzip the activity.csv file in the ./data directory under the current directory.
+Download [activity.zip] (https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip) file and unzip the activity.csv file in the ./data directory under your working directory.
 
 # Loading and preprocessing the data
 
 
 ```r
-setwd("E:\\RStudio\\Coursera\\Reproducible Research\\Week1")
-
 # 1.  Read activity.csv file into activityData variable
 activityData <- read.csv("./data/activity.csv", header = TRUE, sep = ',', colClasses = c("numeric", "character",
                                                                                          "integer"))
